@@ -1,21 +1,25 @@
 {
-    "title": "CMPM 80K – D3 Quick‑Start Check",
-    "required": ["src/assignment_L16.ts"],
-    "passCriteria": "all",
-    "validations": [
-      {
-        "type": "regex",
-        "target": "src/assignment_L16.ts",
-        "description": "Student code creates a <button> element",
-        "pattern": "document\\.createElement\\(['\"]button['\"]\\)"
-      },
-      {
-        "type": "regex",
-        "target": "src/assignment_L16.ts",
-        "description": "Student code attaches a click‑listener that calls alert()",
-        "pattern": "\\.addEventListener\\(['\"]click['\"],\\s*\\([^)]*alert"
-      }
-    ],
-    "successMessage": "✔️  Button detected and click‑alert wired up. Download this artifact and submit to Canvas.",
-    "failureMessage": "❌  Couldn’t find both the button creation and the alert click‑handler. Re‑check your code."
-  }
+  "title": "CMPM 80K – D3 Quick‑Start Check",
+  "required": ["src/assignment_L16.ts"],
+
+  "maxFileSizeMB": 2,
+  "allowedFileTypes": [".ts"],
+  "disallowedExtensions": [".zip"],
+  "passCriteria": "all",
+  "validations": [
+    {
+      "type": "regex",
+      "target": "src/assignment_L16.ts",
+      "description": "Student code creates a <button> element",
+      "pattern": "document\\.createElement\\(['\"]button['\"]\\)"
+    },
+    {
+      "type": "regex",
+      "target": "src/assignment_L16.ts",
+      "description": "Student code attaches a click‑listener that calls alert()",
+      "pattern": "\\.addEventListener\\(['\"]click['\"],\\s*\\([^)]*alert"
+    }
+  ],
+  "successMessage": "✔️  Button detected and click‑alert wired up. Download this artifact and submit to Canvas.",
+  "failureMessage": "❌  Couldn’t find both the button creation and the alert click‑handler. Re‑check your code."
+}
