@@ -17,7 +17,7 @@
       "type": "regex",
       "target": "src/assignment_L16.ts",
       "description": "Student code attaches a click‑listener that calls alert()",
-      "pattern": "\\.addEventListener\\(['\"]click['\"],\\s*\\([^)]*alert"
+      "pattern": "\\.addEventListener\\(['\"]click['\"],[\\s\\S]*?(alert|sayHi|showMessage)"
     }
   ],
   "successMessage": "✔️  Button detected and click‑alert wired up. Download this artifact and submit to Canvas.",
